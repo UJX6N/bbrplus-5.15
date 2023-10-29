@@ -15,7 +15,7 @@ diff -ruaN a/include/net/inet_connection_sock.h b/include/net/inet_connection_so
 diff -ruaN a/include/net/tcp.h b/include/net/tcp.h
 --- a/include/net/tcp.h	2022-11-03 22:59:20.000000000 +0800
 +++ b/include/net/tcp.h	2022-11-08 12:07:44.487204207 +0800
-@@ -572,6 +572,8 @@
+@@ -575,6 +575,8 @@
  #endif
  /* tcp_output.c */
  
@@ -24,7 +24,7 @@ diff -ruaN a/include/net/tcp.h b/include/net/tcp.h
  void tcp_skb_entail(struct sock *sk, struct sk_buff *skb);
  void tcp_mark_push(struct tcp_sock *tp, struct sk_buff *skb);
  void __tcp_push_pending_frames(struct sock *sk, unsigned int cur_mss,
-@@ -1061,6 +1063,9 @@
+@@ -1064,6 +1066,9 @@
  	/* override sysctl_tcp_min_tso_segs */
  	u32 (*min_tso_segs)(struct sock *sk);
  
