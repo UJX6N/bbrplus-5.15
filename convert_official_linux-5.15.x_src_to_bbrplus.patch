@@ -1,7 +1,7 @@
 diff -ruaN a/include/net/inet_connection_sock.h b/include/net/inet_connection_sock.h
 --- a/include/net/inet_connection_sock.h	2022-11-03 22:59:20.000000000 +0800
 +++ b/include/net/inet_connection_sock.h	2022-11-08 12:07:44.487204207 +0800
-@@ -134,8 +134,8 @@
+@@ -132,8 +132,8 @@
  	u32			  icsk_probes_tstamp;
  	u32			  icsk_user_timeout;
  
